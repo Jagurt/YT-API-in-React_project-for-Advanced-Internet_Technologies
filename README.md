@@ -189,6 +189,6 @@ to distinguish whether video comes from playlist or search.
 I feel like there is probably smart way to go around that but i haven't found it.
 
 ## The end
-I hope my readme is as clear as it could be considering I am writing it at 11 pm.
+I hope my readme is as clear as it could be considering I am writing it at 11 pm.<br />
 I would like to thank my Proffesor (whom name I don't know if I can type in here) <br />
 for having most substantive and useful classes in college.
