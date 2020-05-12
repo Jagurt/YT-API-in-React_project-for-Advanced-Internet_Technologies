@@ -13,12 +13,8 @@ class VideoDetail extends React.Component {
         super(props);
 
         var videoId = "";
-        console.log(this.props);
-        if (this.props.video && this.props.video.id) videoId = this.props.video.id.videoId; 
+        if (this.props.video && this.props.video.id) videoId = this.props.video.id.videoId; // VideoDetail normalnie
         else videoId = this.props.video; // VideoDetail w Playliście
-
-        console.log(props.video);
-        console.log(props.videoId);
 
         youtube.get("/videos", {
             params: {

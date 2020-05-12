@@ -25,8 +25,7 @@ class App extends React.Component {
     onResultSelect = (result) => {
         switch (result.id.kind) {
             default:
-                // TODO?: dodać wywołanie errora
-                console.log(result);
+                // TODO?: dodać wywołanie errora ?
                 break;
             case "youtube#video":
                 this.setState({ mode: this.Mode[1], selectedResult: result })
