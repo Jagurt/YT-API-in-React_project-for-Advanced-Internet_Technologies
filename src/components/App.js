@@ -58,18 +58,6 @@ class App extends React.Component {
         }).catch(err => console.log(err));
     };
 
-    // TODO: Channel
-    channelMode = () => {
-        return (
-            <div className="ui grid">
-                <div className="ui row">
-                    <div className="sixteen wide column">
-                    </div>
-                </div>
-            </div>
-        )
-    };
-
     modeSelector = () => {
         switch (this.state.mode) {
             default:
