@@ -1,0 +1,5 @@
+.description{
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
