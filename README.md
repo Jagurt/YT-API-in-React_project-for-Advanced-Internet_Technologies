@@ -14,6 +14,8 @@ You will also see any lint errors in the console.
 
 You have to be careful to not reload this too often or else your api key may become temporarily blocked.
 
+<details>
+  <summary>More React related, autocreated, readme content</summary>
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br />
@@ -68,3 +70,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+</details>
