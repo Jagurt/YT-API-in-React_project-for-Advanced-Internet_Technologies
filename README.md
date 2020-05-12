@@ -1,5 +1,7 @@
 #### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Using YouTube API with React
+
 ## Description
 
   I made this project as a college final project for Advanced Internet Technologies.<br />
