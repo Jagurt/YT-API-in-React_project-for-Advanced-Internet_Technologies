@@ -10,9 +10,7 @@
 ## Technologies
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - version [ECMAScript 2020](https://tc39.es/ecma262/)
 * [React](https://en.reactjs.org/docs/getting-started.html) - version 16.13.1
-* [YouTube Data APIv3](https://developers.google.com/youtube/v3/docs/?apix=true) - version 3.0
-
-
+* [YouTube Data API v3](https://developers.google.com/youtube/v3/docs/?apix=true) - version 3.0
 
 ## Available Scripts
 
@@ -85,3 +83,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 </details>
+
+## The App Logic
+
+App.js has a state which stores useful variables.<br />
+When variable from state is changed via setState method a message is send.<br />
+Message tells React that variable and all that variable affects should be <br />
+rendered again with updated values. <br />
