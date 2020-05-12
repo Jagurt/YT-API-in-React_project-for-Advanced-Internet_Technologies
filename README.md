@@ -138,6 +138,9 @@ I disabled page scrolling in `index.html`
 <body style="height: 100%; overflow: hidden;">
  ```
  
- and made ViewerMode component scrollable.
- That enables tracking of ViewerMode components scroll value and loading more<br />
- results when scrolled to the bottom.
+and made ViewerMode component scrollable.<br />
+That enables tracking of ViewerMode components scroll value and loading more<br />
+results when scrolled to the bottom.<br />
+Check is made as `onScroll` event and it calls `longenSearchResult` method <br />
+which checks scroll value of container with list of results.
+
