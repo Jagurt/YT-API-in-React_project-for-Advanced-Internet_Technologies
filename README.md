@@ -102,7 +102,7 @@ rendered again with updated values. <br />
 <details>
   <summary> *Related videos </summary>
   
-  Videos on side in PlayerMode are not are not related to played one<br />
+  Videos on side in PlayerMode are not related to played one<br />
   but are search results from ViewerMode. I didn't have time to make that work :(
   
   </details>
@@ -139,5 +139,5 @@ I disabled page scrolling in `index.html`
  ```
  
  and made ViewerMode component scrollable.
- That enables tracking of ViewerMode components scroll value and loading more<br /?>
+ That enables tracking of ViewerMode components scroll value and loading more<br />
  results when scrolled to the bottom.
