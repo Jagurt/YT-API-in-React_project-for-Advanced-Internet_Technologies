@@ -8,9 +8,9 @@
   It surely could look better but I am tired and don't have much time to correct it.
   
 ## Technologies
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - version [ECMAScript 2020](https://tc39.es/ecma262/)
+* [React](https://en.reactjs.org/docs/getting-started.html) - version 16.13.1
+* [YouTube Data APIv3](https://developers.google.com/youtube/v3/docs/?apix=true) - version 3.0
 
 
 
