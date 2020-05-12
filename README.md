@@ -160,7 +160,7 @@ PlayerMode gets selected video from App and then displays it, its comments, and 
 ### VideComments.js
 VideComments has most job to do in `constructor`.
 
-It has to distinguish `video` prop between a `videoItem` or `playlistItem`, <br />
+It has to distinguish `video` prop between a `videoItem` and `playlistItem`, <br />
 correctly get `videoId`, call YouTube API for comments, save them to state <br />
 and force update to rerender comments.
 
@@ -172,8 +172,23 @@ of comment and its details.
 
 ### ViewerMode in PlayerMode
 I thought it would be cool if I could scroll those side videos<br />
-and have them loading dynamically so I implemented ViewerMode in PlayerMode<br />
+and have them loading dynamically so I implemented ViewerMode in PlayerMode.
 
-I made ViewerMode to take its width as a prop and created a costructor to handle this case.
+I made ViewerMode take its width as a prop and created a constructor to handle this case.
 
 ## PlaylistMode
+PlaylistMode is basically a ViewerMode but with different items.
+
+It has to call YouTube API to get `playlistItems` contained in clicked playlist.<br />
+Then when it gets `playlistItems` it calls `forceUpdate` to rerender display.
+
+It, like a PlayerMode, uses ViewerMode to display items it got from YouTube API.<br />
+Big downside to this solution is that all components such as "VideoComments" have<br />
+to distinguish whether video comes from playlist or search.
+
+I feel like there is probably smart way to go around that but i haven't found it.
+
+## The end
+I hope my readme is as clear as it could be considering I am writing it at 11 pm.
+I would like to thank my Proffesor (whom name I don't know if I can type in here) <br />
+for having most substantive and useful classes in college.
