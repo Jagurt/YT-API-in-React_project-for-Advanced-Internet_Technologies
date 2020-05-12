@@ -100,14 +100,15 @@ rendered again with updated values. <br />
 * PlaylistMode  - Basically same as ViewerMode but needed some changes becouse Youtube API's JSON <br />
                   for videos and playlistItems are quite different.
 <details>
-  <summary> *Related videos </summary>
+  <summary> *"related to played one" </summary>
   
   Videos on side in PlayerMode are not related to played one<br />
   but are search results from ViewerMode. I didn't have time to make that work :(
   
   </details>
   
-  The `modeSelector` function in App.js is responsible for chosing correct display.
+  The `modeSelector` function in App.js is responsible for chosing correct display<br />
+  based on a \"kind\" of clicked search result.<br />
   It is called in App.js `render` method.
   
   ```js
@@ -122,9 +123,9 @@ rendered again with updated values. <br />
   ```
   
 ### ViewerMode.js
-Viewer mode gets results from search from App and then displays it.
+ViewerMode gets results from search from App and then displays it.
 
-Viewer mode has a `state` that looks like this:
+ViewerMode has a `state` that looks like this:
 * searchedResults - all searched results that have been passed to ViewerMode by App (default 50)
 * viewedResults - results from search that are currently visible on site (default 10, up to 50)
 
@@ -144,3 +145,13 @@ results when scrolled to the bottom.<br />
 Check is made as `onScroll` event and it calls `longenSearchResult` method <br />
 which checks scroll value of container with list of results.
 
+### PlayerMode.js
+PlayerMode gets selected video from App and then displays it, its comments, and videos \*related to it.
+
+<details>
+  <summary> *"related to it" </summary>
+  
+  Videos on side  are not related to played one but instead<br />
+  are search results from ViewerMode. I didn't have time to make that work :(
+  
+  </details>
