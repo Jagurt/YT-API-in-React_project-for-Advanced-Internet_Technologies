@@ -108,7 +108,14 @@ rendered again with updated values. <br />
   The `modeSelector` function in App.js is responsible for chosing correct display.
   It is called in App.js `render` method.
   
-  ```sh
-  <this.modeSelector />
+  ```js
+  render() {
+        return (
+            <div className="ui container">
+                <SearchBar onFormSubmit={this.onTermSubmit} />
+                <this.modeSelector />
+            </div>
+        )
+    };
   ```
   
