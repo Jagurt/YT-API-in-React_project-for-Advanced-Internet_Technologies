@@ -87,18 +87,20 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ## The App Logic
 
+### App.js
+
 App.js file has a `state` which stores useful variables.<br />
 When variable from `state` is changed via `setState` method a message is send.<br />
 Message tells React that variable and all components that variable affects should be <br />
 rendered again with updated values. <br />
 
-### Website can be displayed in 3 modes: 
+#### Website can be displayed in 3 modes: 
 * ViewerMode    - Mode to display searched videos
 * PlayerMode    - Mode to display video player, description, comments, and videos \*related to played one displayed on side
 * PlaylistMode  - Basically same as ViewerMode but needed some changes becouse Youtube API's JSON <br />
                   for videos and playlistItems are quite different.
 <details>
-  <summary> \*Related videos </summary>
+  <summary> *Related videos </summary>
   
   Videos on side in PlayerMode are not are not related to played one<br />
   but are search results from ViewerMode. I didn't have time to make that work :(
@@ -119,3 +121,23 @@ rendered again with updated values. <br />
     };
   ```
   
+### ViewerMode.js
+Viewer mode gets results from search from App and then displays it.
+
+Viewer mode has a `state` that looks like this:
+* searchedResults - all searched results that have been passed to ViewerMode by App (default 50)
+* viewedResults - results from search that are currently visible on site (default 10, up to 50)
+
+`state` is set twice becouse of the different cases we call ViewerMode.
+* Firstly in `constructor` method - it works when we already have searched when we build ViewerMode component
+* Secondly in `componentWillReceiveProps` method - when we receive results after ViewerMode has been built
+
+I disabled page scrolling in `index.html`
+
+```html
+<body style="height: 100%; overflow: hidden;">
+ ```
+ 
+ and made ViewerMode component scrollable.
+ That enables tracking of ViewerMode components scroll value and loading more<br /?>
+ results when scrolled to the bottom.
