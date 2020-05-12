@@ -98,7 +98,7 @@ rendered again with updated values. <br />
 * PlaylistMode  - Basically same as ViewerMode but needed some changes becouse Youtube API's JSON <br />
                   for videos and playlistItems are quite different.
 <details>
-  <summary>Related videos</summary>
+  <summary> *Related videos* </summary>
   
   Videos on side in PlayerMode are not are not related to played one<br />
   but are search results from ViewerMode. I didn't have time to make that work :(
