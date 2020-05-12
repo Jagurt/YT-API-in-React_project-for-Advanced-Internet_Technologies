@@ -122,7 +122,7 @@ rendered again with updated values. <br />
     };
   ```
   
-### ViewerMode.js
+## ViewerMode.js
 ViewerMode gets results from search from App and then displays it.
 
 ViewerMode has a `state` that looks like this:
@@ -145,13 +145,27 @@ results when scrolled to the bottom.<br />
 Check is made as `onScroll` event and it calls `longenSearchResult` method <br />
 which checks scroll value of container with list of results.
 
-### PlayerMode.js
+## PlayerMode.js
 PlayerMode gets selected video from App and then displays it, its comments, and videos \*related to it.
 
 <details>
   <summary> *"related to it" </summary>
   
   Videos on side  are not related to played one but instead<br />
-  are search results from ViewerMode. I didn't have time to make that work :(
+  are search results from ViewerMode. I didn't have time to make that work :(<br />
+  tho i know how.
   
-  </details>
+</details>
+
+### VideComments
+VideComments has most job to do in `constructor`.
+
+It has to distinguish `video` prop between a `videoItem` or `playlistItem`, <br />
+correctly get `videoId`, call YouTube API for comments, save them to state <br />
+and force update to rerender comments.
+
+In `render` method list of comments items is created and then returned.
+
+### CommentItem
+CommentItem is just html and ccs code responsible for correct displaying<br />
+of comment and its details.
