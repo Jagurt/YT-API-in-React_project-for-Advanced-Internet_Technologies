@@ -1,5 +1,17 @@
 #### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Description
+
+  I made this project as a college final project for Advanced Internet Technologies.<br />
+  It surely could look better but I am tired and don't have much time to correct it.
+  
+## Technologies
+* Tech 1 - version 1.0
+* Tech 2 - version 2.0
+* Tech 3 - version 3.0
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -12,7 +24,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-You have to be careful to not reload this too often or else your api key may become temporarily blocked.
+You have to be careful to not reload website too often or else your api key may become temporarily blocked.
 
 <details>
   <summary>More React related, autocreated, readme content</summary>
