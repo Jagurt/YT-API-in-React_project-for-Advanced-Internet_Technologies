@@ -94,6 +94,21 @@ rendered again with updated values. <br />
 
 ### Website can be displayed in 3 modes: 
 * ViewerMode    - Mode to display searched videos
-* PlayerMode    - Mode to display video player, description, comments, and videos related to played one
+* PlayerMode    - Mode to display video player, description, comments, and videos *related to played one* displayed on side
 * PlaylistMode  - Basically same as ViewerMode but needed some changes becouse Youtube API's JSON <br />
                   for videos and playlistItems are quite different.
+<details>
+  <summary>Related videos</summary>
+  
+  Videos on side in PlayerMode are not are not related to played one<br />
+  but are search results from ViewerMode. I didn't have time to make that work :(
+  
+  </details>
+  
+  The `modeSelector` function in App.js is responsible for chosing correct display.
+  It is called in App.js `render` method.
+  
+  ```sh
+  <this.modeSelector />
+  ```
+  
