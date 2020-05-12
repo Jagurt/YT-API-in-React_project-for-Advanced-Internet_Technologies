@@ -27,7 +27,8 @@ You will also see any lint errors in the console.
 You have to be careful to not reload website too often or else your api key may become temporarily blocked.
 
 <details>
-  <summary>More React related, autocreated, readme content</summary>
+  <summary>More React related, autocreated, readme content</summary> 
+  
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br />
@@ -86,7 +87,13 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ## The App Logic
 
-App.js has a state which stores useful variables.<br />
-When variable from state is changed via setState method a message is send.<br />
-Message tells React that variable and all that variable affects should be <br />
+App.js file has a `state` which stores useful variables.<br />
+When variable from `state` is changed via `setState` method a message is send.<br />
+Message tells React that variable and all components that variable affects should be <br />
 rendered again with updated values. <br />
+
+### Website can be displayed in 3 modes: 
+* ViewerMode    - Mode to display searched videos
+* PlayerMode    - Mode to display video player, description, comments, and videos related to played one
+* PlaylistMode  - Basically same as ViewerMode but needed some changes becouse Youtube API's JSON <br />
+                  for videos and playlistItems are quite different.
