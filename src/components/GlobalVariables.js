@@ -1,5 +1,5 @@
 class GlobalVariables{
-    static KEY = "AIzaSyBH66PyVLI3N8xa2KdW1kHbvZm5wds5Txc";
+    static KEY = "";
 }
 
 export default GlobalVariables;
