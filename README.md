@@ -157,7 +157,7 @@ PlayerMode gets selected video from App and then displays it, its comments, and 
   
 </details>
 
-### VideComments
+### VideComments.js
 VideComments has most job to do in `constructor`.
 
 It has to distinguish `video` prop between a `videoItem` or `playlistItem`, <br />
@@ -166,6 +166,14 @@ and force update to rerender comments.
 
 In `render` method list of comments items is created and then returned.
 
-### CommentItem
+### CommentItem.js
 CommentItem is just html and ccs code responsible for correct displaying<br />
 of comment and its details.
+
+### ViewerMode in PlayerMode
+I thought it would be cool if I could scroll those side videos<br />
+and have them loading dynamically so I implemented ViewerMode in PlayerMode<br />
+
+I made ViewerMode to take its width as a prop and created a costructor to handle this case.
+
+## PlaylistMode
